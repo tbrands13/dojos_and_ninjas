@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>New Ninja</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>New Ninja</h1>
+        </div>
+        <div class="mid">
+            <form action="/create" method="POST">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">First Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="fname">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Last Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="lname">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Age</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="age">
+                </div>
+                <div class="dropdown">
+                    <label for="exampleFormControlInput1">Choose Dojo</label>
+                    <select name="dojo_id" id="dojos" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <option class="dropdown-item"value="">Choose Dojo</option>
+                    <option class="dropdown-item"value="6">Monkey Fist</option>
+                    <option class="dropdown-item" value="7">Crouching Tiger</option>
+                    <option class="dropdown-item" value="8">Hidden Dragon</option>
+                    <option class="dropdown-item"value="9">Cobra Kai</option>
+                </div>
+                </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-group">
+            <a href="http://localhost:5000/dojos">Home</a>
+        </div>
+    </div>
+</body>
+
+</html>
